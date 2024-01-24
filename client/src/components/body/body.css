@@ -1,0 +1,120 @@
+.body_section {
+    margin-top: 5rem;
+    overflow-y: auto;
+}
+
+.table {
+    min-width: 100%;
+    border-collapse: separate;
+    border-spacing: 0px 1rem;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+}
+
+.table thead th {
+    color: var(--color-light);
+    font-size: 1.3rem;
+    border-radius: 20px;
+}
+
+tbody {
+    padding: 2rem;
+}
+
+tbody tr {
+    margin-bottom: 2rem;
+    background-color: var(--color-bg1);
+}
+
+td:first-child {
+    border-top-left-radius: 20px;
+    /* apply a border-radius to the top-left cell */
+    border-bottom-left-radius: 20px;
+    /* apply a border-radius to the bottom-left cell */
+}
+
+td:last-child {
+    border-top-right-radius: 20px;
+    /* apply a border-radius to the top-right cell */
+    border-bottom-right-radius: 20px;
+    /* apply a border-radius to the bottom-right cell */
+}
+
+td:nth-child(5) {
+    color: red;
+}
+
+td:nth-child(6) {
+    color: red;
+}
+
+tbody:nth-child(3) td:nth-child(5) {
+    color: aqua;
+}
+
+tbody:nth-child(3) td:nth-child(6) {
+    color: aqua;
+}
+
+.align-middle {
+    font-size: 1.3rem;
+    font-weight: 800;
+    padding: 13px;
+}
+
+.solid td:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.solid img {
+    width: 6%;
+}
+
+
+/* ============== MEDIA QUERIES (MEDIUM) ============ */
+
+@media screen and (max-width: 974px) {
+    .body_section {
+        margin-top: 2rem;
+        overflow-y: auto;
+    }
+    .table thead th {
+        color: var(--color-light);
+        font-size: 0.7rem;
+        /* border-radius: 20px; */
+    }
+    .align-middle {
+        font-size: 0.7rem;
+        font-weight: 800;
+    }
+}
+
+
+/** ============== MEDIA QUERIES (SMALL) ============ */
+
+@media screen and (max-width: 600px) {
+    .body_section {
+        margin-top: 5rem;
+        overflow-y: auto;
+    }
+    table {
+        min-width: 100%;
+    }
+    .table thead th {
+        color: var(--color-light);
+        font-size: 0.7rem;
+        border-radius: 20px;
+    }
+    .align-middle {
+        font-size: 0.7rem;
+        font-weight: 800;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 100%;
+    }
+}

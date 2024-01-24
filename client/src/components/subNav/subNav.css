@@ -1,0 +1,77 @@
+.subNavHeading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.subNavHeading h1 {
+    font-size: 1rem;
+    color: var(--color-light);
+}
+
+.subNaveGrid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.subNavCart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.subNavCart h2 {
+    color: aqua;
+    font-size: 1.5rem;
+}
+
+.subNavCart h3 {
+    color: var(--color-light);
+    font-size: 1rem;
+}
+
+.subNavCart:nth-child(3) h2 {
+    color: white;
+    font-size: 3.5rem;
+}
+
+.subNavEnd {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.subNavEnd h3 {
+    font-size: 1rem;
+    color: var(--color-light);
+}
+
+
+/** ============== MEDIA QUERIES (SMALL) ============ */
+
+@media screen and (max-width: 740px) {
+    .subNaveGrid {
+        grid-template-columns: 1fr;
+    }
+    .subNavCart {
+        margin-top: 1rem;
+    }
+    .subNavEnd h3 {
+        font-size: 10px;
+    }
+    .subNavCart h2 {
+        font-size: 1rem;
+    }
+    .subNavCart:nth-child(3) h2 {
+        font-size: 2rem;
+    }
+    .subNavCart h3 {
+        font-size: .8rem;
+    }
+}
